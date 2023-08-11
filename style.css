@@ -1,0 +1,155 @@
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: auto;
+  }
+  #top {
+    width: 100%; /* Asigură că elementul ocupă întreaga lățime */
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #logo {
+    align-self: flex-end;
+    margin-left: 60px;
+  }
+  
+  #tryFreeBtn {
+    margin-right: 60px;
+    align-self: flex-start;
+    border-radius: 40px;
+    background-color: white;
+    color: #ff19cd;
+    border: 1px solid #ff19cd;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #tryFreeBtn:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  /* Modificări pentru elementul <h1> */
+h1 {
+    text-align: center; /* Aliniem textul în centru pe orizontală */
+    margin-top: 100px; /* Distanța de la partea de sus a paginii */ 
+    font-weight: 800; /* Setăm greutatea fontului la 700 */
+    font-size: 2rem; /* Setăm dimensiunea fontului */
+    margin-bottom: 10px; /* Adăugăm un spațiu mic sub titlu */
+  }
+
+  #text {
+    display: grid; /* Folosim CSS Grid pentru a crea un layout de tip grilă */
+    grid-template-columns: repeat(3, 1fr); /* Definim trei coloane de lățime egală (1/3 din container) */
+    grid-template-rows: 1fr; /* Definim o singură linie care ocupă toată înălțimea containerului */
+    grid-column-gap: 9px; /* Adăugăm un spațiu orizontal (gaură) de 9px între coloane */
+    grid-row-gap: 2px; /* Adăugăm un spațiu vertical (gaură) de 2px între rânduri */
+  }
+  
+  h2 {
+    text-align: center; /* Aliniem textul în centru pe orizontală */
+    grid-column: 2/3;
+    font-family: 'Poppins', sans-serif; /* Folosim fontul Poppins pentru titlu */
+    font-size: 1rem; /* Setăm dimensiunea fontului */
+    line-height: 1.6; /* Setăm înălțimea liniei pentru o citire mai ușoară */
+    padding: 10px; /* Adăugăm un padding pentru a da spațiu textului în container */
+    min-width: 500px;
+  }
+  #GetStarted{
+    display: grid;
+  }
+  #GetStartedBtn {
+    justify-self: center;
+    border-radius: 40px;
+    background-color: #ff19cd;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 700; /* Setăm greutatea fontului la 700 pentru a îngroșa textul */
+    padding: 15px 30px; /* Ajustăm padding-ul pentru a face butonul mai mare */
+    cursor: pointer;
+    width: 300px; /* Ajustăm lățimea butonului */
+    height: 55px; /* Ajustăm înălțimea butonului */
+  }
+  
+  #GetStartedBtn:hover{
+    background-color: #ff7ee3;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  #divScreenMockups{
+    display: grid;
+    margin-top: 90px;
+  }
+  #screenMockups{
+    justify-self: center;
+    width: 730px;
+
+  }
+
+  #messages {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px; /* Adăugăm o distanță de sus */
+    flex-wrap: wrap; /* Permite elementelor să se înfășoare pe mai multe linii */
+  }
+  
+  /* Stilurile pentru elementele din grid */
+  #item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrăm conținutul vertical și orizontal */
+    margin: 10px; /* Adăugăm un spațiu între elemente */
+    flex: 1; /* Distribuie spațiul disponibil în mod egal între elemente */
+  }
+  
+  #item img {
+    margin-bottom: 10px;
+  }
+  
+  #k {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0; /* Eliminăm marginea de sus și de jos */
+  }
+  
+  #messages span {
+    text-align: center; /* Aliniem textul în centru */
+  }
+  
+  .grow{
+    background-color: rgba(246,251,255,255);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+  }
+  
+  #growImg{
+    height: 300px;
+  }
+
+  #bgTop{
+    max-width: 1440px;
+  }
+  .flowing{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+  }

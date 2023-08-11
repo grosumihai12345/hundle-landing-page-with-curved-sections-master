@@ -1,0 +1,51 @@
+/* Stilizare containerul pentru imagine si buton */
+#top {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Imaginea ocupă o coloană, iar butonul ocupă spațiu necesar (auto) în cealaltă coloană */
+  align-items: center; /* Alinează vertical elementele în mijlocul containerului */
+  justify-content: space-between; /* Alinează elementele orizontal în capetele containerului */
+  padding: 20px; /* Adaugă spațiu în jurul elementelor pentru a le separa de margini */
+}
+
+/* Stilizare imagine logo */
+#logo {
+  max-height: 50px; /* Setează dimensiunea maximă a imaginii pentru a o dimensiona corespunzător */
+}
+
+/* Stilizare buton */
+#tryFreeBtn {
+  border-radius: 40px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Stilizare container text */
+#text {
+  display: grid;
+  grid-template-columns: 1fr; /* Un singur element in linie */
+  justify-items: center; /* Alinează elementul pe mijloc pe orizontală */
+  height: 100vh; /* Setează înălțimea containerului la 100% din înălțimea ecranului (viewport height - vh) */
+}
+
+/* Stilizare titlu h1 */
+h1 {
+  font-family: 'Poppins', sans-serif; /* Folosim fontul Poppins pentru titlu */
+  font-weight: 700; /* Setăm greutatea fontului la 700 */
+  font-size: 2rem; /* Setăm dimensiunea fontului */
+  margin-bottom: 10px; /* Adăugăm un spațiu mic sub titlu */
+}
+
+/* Stilizare paragraf h2 */
+h2 {
+  grid-column: 2; /* Pozitionam textul in a doua coloana */
+  text-align: center; /* Alineaza textul la centru in cadrul coloanei */
+  font-family: 'Open Sans', sans-serif; /* Folosim fontul Open Sans pentru paragraf */
+  font-weight: 400; /* Setăm greutatea fontului la 400 */
+  font-size: 1.2rem; /* Setăm dimensiunea fontului */
+  text-align: center; /* Aliniem textul la centru */
+  margin: 0 auto; /* Centram elementul pe orizontală */
+}
