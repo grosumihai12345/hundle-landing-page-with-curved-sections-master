@@ -1,5 +1,6 @@
   body{
     font-family: 'Poppins', sans-serif;
+    color: rgba(0,37,46,255);
   }
   .container {
     display: flex;
@@ -141,7 +142,9 @@ h1 {
   #growImg{
     height: 300px;
   }
-
+  #bgTopMobile {
+    display: none;
+  }
   #bgTop{
     max-width: 1440px;
   }
@@ -153,3 +156,137 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 50px;
   }
+  #growText{
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .ready{
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+  .footer{
+    width: 1440px;
+    display: flex;
+    background-color: rgba(0,37,46,255);
+    color: white;
+    justify-content:space-around;
+    
+  }
+  .footer div{
+    width: 300px;
+    margin: 10px;
+    margin-bottom: 100px;
+    min-height: 200px;
+  }
+  #huddle{
+    font-family: “Comic Sans MS”, “Comic Sans”, cursive;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  #newsletter{
+    font-weight: 600;
+    font-size: 20px;
+  }
+  #iconImg{
+    margin-top: 40px ;
+    margin-right: 15px;
+    height: 30px;
+  }
+#subscribeBtn{
+  
+    justify-self: center;
+    border-radius: 5px;
+    background-color: #ff19cd;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 700; /* Setăm greutatea fontului la 700 pentru a îngroșa textul */
+    padding: 5px 10px; /* Ajustăm padding-ul pentru a face butonul mai mare */
+    cursor: pointer;
+    width: 150px; /* Ajustăm lățimea butonului */
+    height: 35px; /* Ajustăm înălțimea butonului */
+  
+}
+input{
+  width: 250px;
+  height: 25px;
+}
+/* Stilurile existente */
+
+/* Stilurile pentru ecrane mai mici (telefon) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Dimensiunea fontului mai mică pentru ecranele mici */
+  }
+  
+  .container {
+    padding: 20px; /* Reducem padding-ul pentru a economisi spațiu */
+  }
+  .flowing{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grow{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  #bgTop{
+    max-width: 768px;
+  }
+  
+  #top {
+    padding: 20px 10px; /* Reducem padding-ul pentru spațiu mai mic */
+  }
+  
+  #logo {
+    margin-left: 20px; /* Margin mai mic pentru spațiu */
+  }
+  
+  #tryFreeBtn {
+    margin-right: 20px;
+    font-size: 14px; /* Dimensiune font mai mică */
+    padding: 8px 15px; /* Ajustăm padding-ul */
+  }
+  
+  #messages{flex-direction: column;}
+  #bgTop {
+    display: none; /* Ascundem imaginea pentru desktop pe ecrane mici */
+  }
+
+  #bgTopMobile {
+    display: block; /* Afișăm imaginea pentru mobil pe ecrane mici */
+    width: 100%; /* Asigurăm că imaginea nu depășește lățimea ecranului */
+    height: auto; /* Asigurăm aspectul corect al imaginii */
+  }
+  
+  #screenMockups {
+    width: 100%; /* Imaginile ocupă întreaga lățime */
+  }
+  
+  #messages {
+    padding: 20px 10px; /* Reducem padding-ul pentru spațiu mai mic */
+  }
+  
+  /* Restul stilurilor pentru ecrane mici */
+  
+  .footer {
+    width: 100%;
+    flex-direction: column-reverse; /* Așezare în coloană pentru footer */
+    align-items: center; /* Aliniere centrală pe orizontală */
+  }
+  
+  .footer div {
+    margin-bottom: 50px; /* Reducem margin-bottom pentru spațiu mai mic */
+  }
+  
+  #subscribeBtn {
+    width: 120px; /* Ajustăm lățimea butonului */
+    height: 30px; /* Ajustăm înălțimea butonului */
+    font-size: 14px; /* Dimensiune font mai mică */
+    padding: 3px 8px; /* Ajustăm padding-ul */
+  }
+  
+  input {
+    width: 180px; /* Ajustăm lățimea câmpului de input */
+    height: 20px; /* Ajustăm înălțimea câmpului de input */
+  }
+}
